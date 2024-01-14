@@ -7,11 +7,12 @@
         let player = ruffle.createPlayer();
         let container = document.querySelector(".ruffle-container");
         container.appendChild(player);
+        player.style.width = "100vw"; 
+        player.style.height = "100vh";
         player.load("pvz.swf");
     });
 </script>
 <script src="ruffle/ruffle.js"></script>
 <style>
     *{padding:0;margin:0;}
-    .ruffle-container{width:100vw;height:100vh;}
 </style>
