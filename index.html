@@ -1,0 +1,13 @@
+<div class="ruffle-container"></div>
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+
+    window.addEventListener("DOMContentLoaded", () => {
+        let ruffle = window.RufflePlayer.newest();
+        let player = ruffle.createPlayer();
+        let container = document.querySelector(".ruffle-container");
+        container.appendChild(player);
+        player.load("pvz.swf");
+    });
+</script>
+<script src="ruffle.js"></script>
